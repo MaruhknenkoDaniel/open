@@ -7,7 +7,7 @@ body{
     min-width: 320px;
     font-family: Gideon Roman;
     color: #533a2e;
-    background-color:blanchedalmond;
+    background: color f 9f 4f 4px;;
 }
 img{
     display: block;
@@ -83,13 +83,31 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
-    background-color:peru;
+    background-color:burlywood;
     color: #fff;
 }
 li {
     list-style-type: none;
    }
-   ul {
+ul {
     margin-left: 0; 
     padding-left: 0; 
-   }
+}
+.img1{
+    width: 50px;
+    height: 50px;
+}
+.img2{
+    width: 50px;
+    height: 50px;
+}
+
+.f-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.f-image img{
+    margin: 20px;
+}
