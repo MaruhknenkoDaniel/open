@@ -34,7 +34,7 @@ img{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    widt: 100%;
     transition: 0.3 s ease-out;
     padding: 5px 0;
     z-index: 999;
