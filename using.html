@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/js/bootstrap.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="using.css">
+</head>
+
+<body ng-app>
+    <header class="header">
+        <div class="wrap flex">
+            <div class="logo wrap">
+                <a href="index.html"></a><img src="dog.png" alt="">
+            </div>
+            <ul class="navigate">
+                <li><a href="https://maruhknenkodaniel.github.io/animal/animal.html">Животные </a></li>
+                <li><a href="">Дресеровка</a></li>
+                <li><a href="">Приют</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://mixnews.lv/wp-content/uploads/2020/10/24/2020-10-24-mixnews-1603040850_rabota-10.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                 
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://mixnews.lv/wp-content/uploads/2020/10/24/in4333dex.jpeg" class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/5CB0/production/_99782732_37e58b7e-9cf4-44e0-86c7-59c42f34697a.jpg.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1>Где используют животных</h1>
+    <form>
+        <h2>Собака</h2>
+        <input type="radio" ng-model="info" value="haggyWaggy"> Армия
+        <input type="radio" ng-model="info" value="MshkFreddy"> Охотничья Собака
+        <input type="radio" ng-model="info" value="Bebroshka"> Охотник на трюфели
+        <input type="radio" ng-model="info" value="GeneralGavs"> Собака - Мер
+    </form>
+    <div ng-switch="info">
+        <div ng-switch-when="haggyWaggy">
+            <img src="data:image/jpeg;base64,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"
+                alt="" srcset="" id="img5">
+            <p>Боевые собаки — специально тренированные служебные собаки, которых использовали в боях (сражениях,
+                битвах) вооружённые силы периода античности и Средневековья с целью непосредственного убийства солдат
+                противника.</p>
+        </div>
+        <div ng-switch-when="MshkFreddy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Chocolate_Labrador_Retriever_pheasant.jpg/1200px-Chocolate_Labrador_Retriever_pheasant.jpg"
+                alt="" srcset="" id="img5">
+            <p>Охотничьи собаки — собаки разных пород, выведенные и используемые для помощи человеку на охоте. Имеется
+                несколько групп пород охотничьих собак, предназначенные для разных видов охоты. Основные категории
+                охотничьих собак включают гончих, терьеров, такс, подружейных собак.</p>
+        </div>
+        <div ng-switch-when="Bebroshka">
+            <img src="https://mixnews.lv/wp-content/uploads/2020/10/24/in4333dex.jpeg" alt="" id="img5">
+            <p>У некоторых животных обоняние гораздо более чувствительное, чем у нас. Свиньи хорошо известны своей
+                способностью унюхивать трюфели под землей, но они также склонны есть трюфели, которые они находят.
+                Собаки испытывают гораздо меньший аппетит к драгоценным грибам. Некоторых собак дрессируют, чтобы
+                отличительный запах трюфелей ассоциировался с удовольствием уже через несколько дней после их рождения.
+            </p>
+        </div>
+        <div ng-switch-when="GeneralGavs">
+            <img src="https://mixnews.lv/wp-content/uploads/2020/10/24/2020-10-24-mixnews-1603040850_rabota-10.jpg"
+                alt="" srcset="" id="img5">
+            <p>Мэр Макс — не первая собака, которую назначили мэром Айдиллуайлда. Его предшественник, Макс I, умер во
+                время пребывания в этой должности, и после стремительных поисков замены был найден нынешний мэр. Первый
+                мэр Макс выиграл эту должность на благотворительном мероприятии, опередив ряд других домашних питомцев.
+                Поскольку Айдиллуайлд не является городом и не имеет собственного управления, то должность Макса,
+                скорее, почётная.</p>
+        </div>
+    </div>
+    <form>
+        <h2>Кот</h2>
+        <input type="radio" ng-model="info" value="кот1"> Строитель
+        <input type="radio" ng-model="info" value="кот2"> Звезда Голивуда
+        <input type="radio" ng-model="info" value="кот3"> Кот военый
+        <input type="radio" ng-model="info" value="кот4"> Кот Полицейский
+    </form>
+    <div ng-switch="info">
+        <div ng-switch-when="кот1">
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/5CB0/production/_99782732_37e58b7e-9cf4-44e0-86c7-59c42f34697a.jpg.webp"
+                alt="" srcset="" id="img5">
+            <p>
+                Но некоторые кошки и коты не спят, а работают, чтобы прокормить себя. Нередко они занимают довольно
+                уважаемые должности - в некоторых случаях для них даже предусмотрена специальная униформа.
+                Вот истории нескольких британских котов, которые опровергают миф о том, что коты только и умеют дремать
+                и тереться боками о ноги хозяев, покровительственно поглядывая на них.</p>
+        </div>
+        <div ng-switch-when="кот2">
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/F8F0/production/_99782736_ff04522d-dff2-4de5-bd20-a6d013c8ba15.jpg.webp"
+                alt="" srcset="" id="img5">
+            <p>
+                Для котов всегда находилось место перед камерой в художественных фильмах. Два красных персидских кота
+                исполнили роль Живоглота в фильмах о Гарри Поттере, а роль миссис Норрис исполнили три кота породы
+                мейн-кун. Каждого кота, участвовавшего в съемках, учили прыгать на плечо актера и лежать неподвижно.</p>
+        </div>
+        <div ng-switch-when="кот3">
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/14710/production/_99782738_f8ecde43-6d7c-4d18-aa09-54c29e58a05d.jpg.webp"
+                alt="" id="img5">
+            <p>Во времена Второй мировой войны на каждом британском корабле обитал по меньшей мере один кот. Но только
+                кот Саймон получил медаль Марии Дикин - высшую воинскую награду Великобритании для животных - за помощь
+                в спасени моряков во время гражданской войны в Китае в 1949-1950 гг. Эту награду можно назвать "крестом
+                Виктории" для животных.Корабль, на котором служил кот Саймон, оказался отрезанным от основных сил флота
+                в течение 101 дня, и все это время кот защищал запасы продуктов от нашествия грызунов. Во время обстрела
+                корабля Саймон получил тяжелые осколочные ранения. Когда кот вернулся в родной Плимут, его встречали как
+                героя. Саймон, несмотря на серьезные ранения, смог продержаться, чтобы вернуться домой, однако через три
+                недели после возвращения в Англию он умер и был похоронен с военными почестями в Илфорде (графство
+                Эссекс).</p>
+        </div>
+        <div ng-switch-when="GeneralGavs">
+            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/D1E0/production/_99782735_d7175db9-26a8-4c10-8a11-ad721e55fe70.jpg.webp"
+                alt="" srcset="" id="img5">
+            <p>Собаки, как известно, традиционно принимаются на службу в полицию, а вот о службе котов в полиции почти
+                ничего не известно широкой публике. Обычно коты становятся героями публикаций, если их арестовывают за
+                кражу.
+
+                Летом 2016 года полицейское отделение в городе Дарем приняло на работу кота Миттенс. Назначение кота на
+                должность в полиции последовало за письмом пятилетней Элизы Адамсон-Хоппер, которая посчитала, что
+                полиция должна взять в свои ряды кота.
+
+                "Полицейский кот сослужит хорошую службу, так как у него хороший слух, он чует опасность. Коты очень
+                хорошо знают дорогу домой, и поэтому могут привести полицейских на место", - написала Элиза.</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <ul>
+            <li>
+                <p>This site is for entertainment purposes only and does not pose a threat 😀</p>
+            </li>
+            <li>
+                <p>© 2021 Feel the Vibe. All Right Reserved | Design by Marukhnenko Dany</p>
+            </li>
+            <div class="f-image">
+                <p><a href="https://uaitsmart.com/ru/home"><img src="google-brands.svg" class="img1"
+                            alt="It-школа Смарт"></a></p>
+                <p><a href="https://www.instagram.com/itschoolsmart/"><img src="instagram-brands.svg" class="img2"
+                            alt="It-школа Смарт"></a></p>
+            </div>
+        </ul>
+    </footer>
+</body>
+
+</html>
