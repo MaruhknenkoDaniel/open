@@ -25,66 +25,42 @@
                 <a href="index.html"></a><img src="dog.png" alt="">
             </div>
             <ul class="navigate">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="animal.html">Животные </a></li>
-                <li><a href="dres.html">Дресеровка</a></li>
-                <li><a href="https://zoo.dp.ua/zoocatalog/categories/priyut-dlya-zhivotnyh/">Приют</a></li>
-                
-                
+                <li><a href="https://maruhknenkodaniel.github.io/animal/animal.html">Животные </a></li>
+                <li><a href="">Дресеровка</a></li>
+                <li><a href="">Приют</a></li>
             </ul>
         </div>
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://mixnews.lv/wp-content/uploads/2020/10/24/2020-10-24-mixnews-1603040850_rabota-10.jpg"
-                    class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                 
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://mixnews.lv/wp-content/uploads/2020/10/24/in4333dex.jpeg" class="d-block w-100" alt="...">
-                
-            </div>
-            <div class="carousel-item">
-                <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/5CB0/production/_99782732_37e58b7e-9cf4-44e0-86c7-59c42f34697a.jpg.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                
-            </div>
+          <div class="carousel-item active">
+            <img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_960_720.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2016/02/19/15/46/labrador-retriever-1210559_960_720.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
-    <h1>Где используют животных</h1>
+      </div>
+    <h1>Где работают животные</h1>
     <form>
         <h2>Собака</h2>
-        <input type="radio" ng-model="info" value="haggyWaggy"> Армия
-        <input type="radio" ng-model="info" value="MshkFreddy"> Охотничья Собака
-        <input type="radio" ng-model="info" value="Bebroshka"> Охотник на трюфели
-        <input type="radio" ng-model="info" value="GeneralGavs"> Собака - Мер
+        <input type="radio" ng-model="info" value="haggyWaggy" > <span class="as">Армия</span>
+        <input type="radio" ng-model="info" value="MshkFreddy"><span class="as">Охота</span> 
+        <input type="radio" ng-model="info" value="Bebroshka"><span class="as">Охотник на трюфеля</span>
+        <input type="radio" ng-model="info" value="GeneralGavs"><span class="as">Собака - Мер</span>
     </form>
     <div ng-switch="info">
         <div ng-switch-when="haggyWaggy">
@@ -120,11 +96,12 @@
         </div>
     </div>
     <form>
+        <hr>
         <h2>Кот</h2>
-        <input type="radio" ng-model="info" value="кот1"> Строитель
-        <input type="radio" ng-model="info" value="кот2"> Звезда Голивуда
-        <input type="radio" ng-model="info" value="кот3"> Кот военый
-        <input type="radio" ng-model="info" value="кот4"> Кот Полицейский
+        <input type="radio" ng-model="info" value="кот1"> <span class="as">Строитель</span> 
+        <input type="radio" ng-model="info" value="кот2"><span class="as">Звезда Голивуда</span>
+        <input type="radio" ng-model="info" value="кот3"> <span class="as">Кот военный</span>
+        <input type="radio" ng-model="info" value="кот4"> <span class="as">Кот полицейский</span>
     </form>
     <div ng-switch="info">
         <div ng-switch-when="кот1">
@@ -137,7 +114,7 @@
                 и тереться боками о ноги хозяев, покровительственно поглядывая на них.</p>
         </div>
         <div ng-switch-when="кот2">
-            <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/F8F0/production/_99782736_ff04522d-dff2-4de5-bd20-a6d013c8ba15.jpg.webp"
+            <img src="data:image/jpeg;base64,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"
                 alt="" srcset="" id="img5">
             <p>
                 Для котов всегда находилось место перед камерой в художественных фильмах. Два красных персидских кота
@@ -157,7 +134,7 @@
                 недели после возвращения в Англию он умер и был похоронен с военными почестями в Илфорде (графство
                 Эссекс).</p>
         </div>
-        <div ng-switch-when="GeneralGavs">
+        <div ng-switch-when="кот4">
             <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/D1E0/production/_99782735_d7175db9-26a8-4c10-8a11-ad721e55fe70.jpg.webp"
                 alt="" srcset="" id="img5">
             <p>Собаки, как известно, традиционно принимаются на службу в полицию, а вот о службе котов в полиции почти
@@ -172,17 +149,63 @@
                 хорошо знают дорогу домой, и поэтому могут привести полицейских на место", - написала Элиза.</p>
         </div>
     </div>
+    <hr>
+    <h2>Популярные книги и фильмы про животных </h2>
+    <div class="booksApp">
+        <script type="text/ng-template" id="index21-2-1.html">
+            <h1>Title: {{books.title}}</h1>
+            <p>Author: {{books.author}}</p>
+            <p>Year of publishing: {{books.year}}</p>
+        </script>
 
+
+        <div class="books-container">
+            <div class="books-view" ng-view></div>
+        </div>
+        <style>
+            input{
+                margin-top: 50px;
+            }
+        </style>
+        <main>
+          
+        <hr>
+        <div ng-init='books = [
+        {"title": "Кот Саймон", "year" :2008, "avtor" : "Саймон Тофилд"},
+        {"title": "Прокотиков", "year" : 2021, "avtor" : "Макс Фрай"},
+        {"title": "Дневник Кото-сапиенса", "year" : 2015, "avtor" : "Тамара Крюкова"},
+        {"title": "Клиффорд", "year" :2021, "avtor" : "Джастин Мален"},
+        {"title": "Джуманджи", "year" : 2019, "avtor" : "Крис Ван Оллсбург"},
+        {"title": "Зверополис", "year" : 2016, "avtor" : "Байрон Ховард"}
+        ]'>
+    </div>
+        <div>
+            <p><input type="text" class="form-control" ng-model="search"></p>
+                <table class="table">
+                    <tr>
+                        <th>Название Книг и Фильмов</th>
+                    </tr>
+                    <tr ng-repeat="book in books | filter : search ">
+                        <td>{{book.title}}</td>
+                        <td>{{book.year}}</td>
+                        <td>{{book.avtor}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <th>Книгa 2</th>
+                    </tr>
+                    <tr>
+                        <th>Книгa 3</th>
+                    </tr> -->
+                </table>
+            </div>
+            </main>
+    </div>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <footer>
         <ul>
             <li>
