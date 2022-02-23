@@ -1,52 +1,129 @@
-var app =  angular.module("booksApp", ["ngRoute", "ngAnimate"]);
-app.config(function($routeProvider){
-    $routeProvider
-    .when('/harry1', {
-        templateUrl: 'index21-2-1.html',
-        controller: "book1"
-    })
-    .when('/harry2', {
-        templateUrl: 'index21-2-1.html',
-        controller: "book2"
-    })
-    .when('/harry3', {
-        templateUrl: 'index21-2-1.html',
-        controller: "book3"
-    })
-    .when('/harry4', {
-        templateUrl: 'index21-2-1.html',
-        controller: "book4"
-    })
-})
-app.controller("book1", function($scope, $route){
-    $scope.books = {
-        title: "Harry Potter and the Sorcerer's Stone. Part 1.",
-        author: "J. K. Rowling",
-        year: 2001,
+*{
+    box-sizing: border-box;
+}
 
-    }
-})
-app.controller("book2", function($scope, $route){
-    $scope.books = {
-        title: "Harry Potter and the Chamber of Secrets. Part 2.",
-        author: "J. K. Rowling",
-        year: 2002,
+body{
+    margin: 0;
+    min-width: 320px;
+    font-family: Gideon Roman;
+    color: #533a2e;
+    background-color:blanchedalmond;
+}
+img{
+    display: block;
+    width: 100px;
+}
+.navigate{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+}
+.navigate a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navigate a:hover{
+    color: #533a2e;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3 s ease-out;
+    padding: 5px 0;
+    z-index: 999;
+    color: darkred;
+}
+.header a{
+    color: darkred;
+}
+.header_active{
+    background: #FFF9B6;
+}
+.header_active a{
+    color: #FEE440;
+}
+.logo-wrap img{
+    width: 60px;
+}
+.logo-wrap{
+    width: 100px;
+    height: auto;
+}
+.wrap{
 
-    }
-})
-app.controller("book3", function($scope, $route){
-    $scope.books = {
-        title: "Harry Potter and the Prisoner of Azkaban. Part 3.",
-        author: "J. K. Rowling",
-        year: 2004,
+    max-width: 960px;
+    padding: 0 15 px;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.table{
+    font-size: x-large;
+}
+h3{
+    text-align: center;
+}
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 
-    }
-})
-app.controller("book4", function($scope, $route){
-    $scope.books = {
-        title: "Harry Potter and the Goblet of Fire. Part 4.",
-        author: "J. K. Rowling",
-        year: 2005,
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color:burlywood;
+    color: #fff;
+}
+li {
+    list-style-type: none;
+   }
+ul {
+    margin-left: 0; 
+    padding-left: 0; 
+}
+.img1{
+    width: 50px;
+    height: 50px;
+}
+.img2{
+    width: 50px;
+    height: 50px;
+}
 
-    }
-})
+.f-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.f-image img{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#img5{
+    height: 350px;
+    width: 350px;
+}
+.as{
+    font-size: 25px;
+}
+.d-block{
+    height: 700px;
+}
